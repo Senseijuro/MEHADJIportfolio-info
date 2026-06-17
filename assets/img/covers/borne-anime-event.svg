@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#343d4c"/>
+<rect x="300" y="80" width="200" height="280" rx="18" fill="#2c3442" stroke="#ffffff" stroke-width="6"/>
+  <rect x="330" y="112" width="140" height="120" rx="8" fill="#c5524e"/>
+  <rect x="330" y="252" width="140" height="16" rx="8" fill="#ffffff" opacity=".85"/>
+  <rect x="330" y="282" width="96" height="16" rx="8" fill="#ffffff" opacity=".5"/>
+  <rect x="362" y="360" width="76" height="22" rx="6" fill="#ffffff" opacity=".25"/>
+<text x="48" y="408" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="52" fill="#ffffff">La borne d&#8217;Anime Event</text>
+<text x="48" y="448" font-family="Verdana, sans-serif" font-size="17" letter-spacing="4" fill="#c3c9d3">BORNE DE COMMANDE · CLICK &amp; COLLECT · CLIENT RÉEL</text>
+</svg>

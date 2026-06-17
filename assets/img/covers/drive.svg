@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#2c3442"/>
+<rect x="0" y="250" width="800" height="4" fill="#c5524e"/>
+  <g stroke="#8a93a1" stroke-width="3"><line x1="400" y1="254" x2="160" y2="500"/><line x1="400" y1="254" x2="640" y2="500"/></g>
+  <g fill="#ffffff"><rect x="392" y="290" width="16" height="40"/><rect x="386" y="360" width="28" height="56"/></g>
+  <circle cx="620" cy="120" r="44" fill="#ffffff" opacity=".12"/>
+<text x="48" y="408" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="52" fill="#ffffff">Drive</text>
+<text x="48" y="448" font-family="Verdana, sans-serif" font-size="17" letter-spacing="4" fill="#c3c9d3">NICOLAS WINDING REFN · 2011</text>
+</svg>

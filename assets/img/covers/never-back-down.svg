@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#343d4c"/>
+<g stroke-width="26" stroke-linecap="round"><line x1="220" y1="280" x2="430" y2="100" stroke="#c5524e"/><line x1="370" y1="100" x2="580" y2="280" stroke="#ffffff"/></g>
+  <rect x="180" y="300" width="440" height="6" fill="#46505f"/>
+<text x="48" y="408" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="52" fill="#ffffff">Never Back Down</text>
+<text x="48" y="448" font-family="Verdana, sans-serif" font-size="17" letter-spacing="4" fill="#c3c9d3">JEFF WADLOW · 2008</text>
+</svg>

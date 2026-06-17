@@ -1,0 +1,167 @@
+/* ============================================================
+   PORTFOLIO — MOHAMED-YACINE MEHADJI
+   base.css — tokens, reset, typographie, composants de base
+   Charte graphique héritée du CV (ardoise / rouge / Playfair+Lato)
+   ============================================================ */
+
+/* ---------- Polices (auto-hébergées, identiques au CV) ---------- */
+@font-face { font-family:'Lato'; src:url('../assets/fonts/Lato-Regular.ttf'); font-weight:400; font-display:swap; }
+@font-face { font-family:'Lato'; src:url('../assets/fonts/Lato-Italic.ttf'); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Lato'; src:url('../assets/fonts/Lato-SemiBold.ttf'); font-weight:600; font-display:swap; }
+@font-face { font-family:'Lato'; src:url('../assets/fonts/Lato-Bold.ttf'); font-weight:700; font-display:swap; }
+@font-face { font-family:'Lato'; src:url('../assets/fonts/Lato-Black.ttf'); font-weight:900; font-display:swap; }
+@font-face { font-family:'Playfair'; src:url('../assets/fonts/PlayfairDisplay.ttf'); font-weight:400 900; font-display:swap; }
+
+/* ---------- Tokens ---------- */
+:root{
+  --slate:#343d4c;
+  --slate-deep:#2c3442;
+  --slate-soft:#46505f;
+  --red:#c5524e;
+  --red-deep:#a8423f;
+  --red-tint:#faf1f0;
+  --ink:#39414e;
+  --muted:#8a93a1;
+  --bg:#f0f2f4;
+  --paper:#ffffff;
+  --side:#e7eaee;
+  --line:#dfe3e9;
+  --radius:6px;
+  --shadow:0 1px 2px rgba(44,52,66,.06), 0 6px 22px rgba(44,52,66,.07);
+  --shadow-lg:0 2px 6px rgba(44,52,66,.08), 0 16px 44px rgba(44,52,66,.12);
+  --container:1120px;
+}
+
+/* ---------- Reset ---------- */
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  font-family:'Lato', sans-serif;
+  font-size:16px; line-height:1.65;
+  color:var(--ink); background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul{ list-style:none; }
+strong, b{ font-weight:700; color:var(--slate-deep); }
+
+::selection{ background:var(--red); color:#fff; }
+
+/* ---------- Typographie ---------- */
+h1,h2,h3{ color:var(--slate-deep); line-height:1.15; }
+.display{ font-family:'Playfair', serif; font-weight:800; letter-spacing:.3px; }
+.lede{ font-size:1.08rem; color:var(--slate-soft); max-width:62ch; }
+.small{ font-size:.85rem; color:var(--muted); }
+
+/* Étiquette rouge lettrée (échos du "TECHNIQUES DE COMMERCIALISATION" du CV) */
+.eyebrow{
+  display:inline-block; color:var(--red);
+  font-size:.72rem; font-weight:900; letter-spacing:.32em;
+  text-transform:uppercase; margin-bottom:.7rem;
+}
+
+/* ---------- Le motif signature du CV : la barre de section ---------- */
+.bar{
+  background:var(--slate); color:#fff;
+  text-align:center; text-transform:uppercase;
+  font-size:.78rem; font-weight:700; letter-spacing:.28em;
+  padding:.62rem 1rem; margin-bottom:1.6rem;
+  border-radius:2px;
+}
+.bar i{ font-style:normal; color:var(--red); }
+
+/* ---------- Puces rouges (échos des listes du CV) ---------- */
+.dots li{
+  position:relative; padding-left:1.35rem; margin-bottom:.5rem;
+}
+.dots li::before{
+  content:''; position:absolute; left:.15rem; top:.62em;
+  width:.42rem; height:.42rem; border-radius:50%; background:var(--red);
+}
+
+/* ---------- Pastille date (échos des badges du CV) ---------- */
+.chip{
+  display:inline-block; background:var(--slate); color:#fff;
+  font-size:.72rem; font-weight:700; letter-spacing:.04em;
+  padding:.22rem .8rem; border-radius:999px; white-space:nowrap;
+}
+.chip.red{ background:var(--red); }
+.chip.ghost{ background:transparent; color:var(--slate); border:1.5px solid var(--slate); }
+
+/* ---------- Tags Info / Com (la double identité du profil) ---------- */
+.tag{
+  display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.05em;
+  padding:.18rem .65rem; border-radius:999px;
+  border:1.5px solid var(--slate); color:var(--slate); background:#fff;
+}
+.tag.com{ border-color:var(--red); color:var(--red); }
+.tag.solid{ background:var(--slate); color:#fff; }
+.tag.com.solid{ background:var(--red); color:#fff; border-color:var(--red); }
+
+/* ---------- Encadré rouge (échos du bloc "compétences BUT TC" du CV) ---------- */
+.note-red{
+  background:var(--red-tint); border-left:5px solid var(--red);
+  border-radius:0 var(--radius) var(--radius) 0;
+  padding:1rem 1.25rem; margin:1.2rem 0;
+}
+.note-red strong{ color:var(--red-deep); }
+
+/* ---------- Encadré ardoise ---------- */
+.note-slate{
+  background:var(--slate); color:#e7eaee;
+  border-radius:var(--radius); padding:1.4rem 1.5rem;
+}
+.note-slate strong{ color:#fff; }
+.note-slate .eyebrow{ color:#e8a09d; }
+
+/* ---------- Boutons ---------- */
+.btn{
+  display:inline-flex; align-items:center; gap:.55rem;
+  font-weight:700; font-size:.92rem; letter-spacing:.02em;
+  padding:.72rem 1.5rem; border-radius:999px;
+  border:2px solid var(--slate); transition:all .22s ease;
+  cursor:pointer; background:transparent; color:var(--slate);
+}
+.btn:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+.btn.primary{ background:var(--slate); color:#fff; }
+.btn.primary:hover{ background:var(--slate-deep); }
+.btn.red{ background:var(--red); border-color:var(--red); color:#fff; }
+.btn.red:hover{ background:var(--red-deep); border-color:var(--red-deep); }
+.btn .arrow{ transition:transform .22s ease; }
+.btn:hover .arrow{ transform:translateX(4px); }
+
+/* ---------- Cartes ---------- */
+.card{
+  background:var(--paper); border:1px solid var(--line);
+  border-radius:var(--radius); padding:1.5rem;
+  box-shadow:var(--shadow);
+}
+
+/* ---------- Barres de niveau (échos des langues du CV) ---------- */
+.level{ margin-bottom:1rem; }
+.level .row{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:.35rem; }
+.level .row b{ font-size:.92rem; }
+.level .row span{ font-size:.78rem; color:var(--muted); font-weight:600; }
+.level .track{ height:7px; background:var(--side); border-radius:99px; overflow:hidden; }
+.level .fill{
+  display:block; height:100%; background:var(--slate); border-radius:99px;
+  width:0; transition:width 1.1s cubic-bezier(.2,.7,.3,1);
+}
+.level .fill.com{ background:var(--red); }
+.in-view .fill{ width:var(--w); }
+
+/* ---------- Animations d'apparition ---------- */
+.reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in-view{ opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .reveal{ opacity:1; transform:none; transition:none; }
+  .level .fill{ transition:none; width:var(--w); }
+}
+
+/* ---------- Utilitaires ---------- */
+.center{ text-align:center; }
+.mt-1{ margin-top:1rem; } .mt-2{ margin-top:2rem; } .mt-3{ margin-top:3rem; }
+.mb-1{ margin-bottom:1rem; } .mb-2{ margin-bottom:2rem; }
+.flex{ display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#343d4c"/>
+<rect x="250" y="110" width="300" height="200" rx="14" fill="#2c3442" stroke="#ffffff" stroke-width="5"/>
+  <circle cx="290" cy="142" r="7" fill="#c5524e"/><circle cx="316" cy="142" r="7" fill="#ffffff" opacity=".5"/><circle cx="342" cy="142" r="7" fill="#ffffff" opacity=".25"/>
+  <path d="M330 230 l40 40 l80 -90" stroke="#7ec98f" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="48" y="408" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="52" fill="#ffffff">Qualité de développement</text>
+<text x="48" y="448" font-family="Verdana, sans-serif" font-size="17" letter-spacing="4" fill="#c3c9d3">TESTS · NON-RÉGRESSION · CI · S4</text>
+</svg>
